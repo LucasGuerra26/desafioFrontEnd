@@ -4,12 +4,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#f0b576, #ad5c04);
+    background: linear-gradient(#032149,#6e7b90);
 }
 
 .box{
     margin-top: 20px;
-    background-color: transparent;
+    background-color: #6785ac;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@
 }
 
 .title{
-    font-size: 60px;
+    font-size: 30px;
     color: #000;
 }
 
@@ -55,15 +55,4 @@
 
 .buttonSearch:hover{
     transform: scale(1.2);
-}
-
-@media (max-width: 800px){
-    .title{
-        font-size: 40px;
-    }
-
-    .containerImput{
-        
-    }
-
 }

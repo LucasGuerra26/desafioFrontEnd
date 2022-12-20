@@ -1,5 +1,7 @@
-import ImputText from "./ImputText"
+import ImputText from "./ImputText";
+import { checkError } from "./util/checkError";
 import { useState } from 'react';
+import { findTransfers } from "./services/transfersService";
 
 import './styles.css'
 
@@ -9,16 +11,30 @@ function App() {
   const [dataFinal, setDataFinal] = useState("");
   const [idConta, setIdConta] = useState("");
 
-  function search(){
-    if (idConta === "" && dataFinal === "" && dataInicial === "" && nomeOperador === "") {
-      alert("PELO MENOS UM CAMPO DA PESQUISA DEVE SER PREENCHIDO")
+  const [transferencias, setTransferencias] = useState([]);
+
+  async function search(){
+    if (!checkError(idConta, dataFinal, dataInicial, nomeOperador)){
+      return
+    } else {
+      const dataFinalAux = dataFinal.replace('/', '').replace('/', '');
+      const dataInicalAux = dataInicial.replace('/', '').replace('/', '')
+
+      try {
+        const response = await findTransfers(nomeOperador, dataInicalAux, dataFinalAux, idConta);
+        setTransferencias(response);
+        console.log(response)
+      } catch {
+        alert("Ocorreu um erro inesperado")
+        setNomeOperador("");
+        setDataInicial("");
+        setDataFinal("");
+        setIdConta("");
+      }
     }
 
-    setIdConta("");
-    setNomeOperador("");
-    setDataInicial("");
-    setDataFinal("");
   }
+
   return (
     <div className="container">
       
