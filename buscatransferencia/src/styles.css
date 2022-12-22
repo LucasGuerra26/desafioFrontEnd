@@ -1,38 +1,67 @@
 .container{
-    height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
+    background-color: #E2CE1A;
     display: flex;
-    flex-direction: column;
-    background: linear-gradient(#032149,#6e7b90);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .box{
-    margin-top: 20px;
-    background-color: #6785ac;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
-.containerImput{
+.inputContainer{
+    display: flex;
+    padding: 20px;
     justify-content: center;
-    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.buttonSearch{
+.form{
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
-    margin-top: 20px;
+    background-color: #36320A;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titleForm{
+    color: #fff;
+    font-size: larger;
+}
+.subTitleForm{
+    color: #fff;
+    font-size: xx-small;
 }
 
-.title{
-    font-size: 30px;
-    color: #000;
+.table{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 40px;
+    background-color: #FEFAA1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+}
+.titleTable{
+    color: #36320A;
 }
 
 .button{
-    margin-top: 20px;
-   
+    padding-bottom: 20px;
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
@@ -40,19 +69,121 @@
 }
 
 .buttonSearch{
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #000;
-    font-size: 10px;
-    border: 0;
+    background-color: #36320A;
+    font-size: 12px;
+    color: #fff;
+    border-color: #fff;
+    border: 2;
     display: flex;
     cursor: pointer;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     margin-top: 5px;
     transition: transform 0.5s;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+/* table style*/
+.tableContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-width: 1px;   
+    border-style: solid; 
+    border-color: #000;
+    flex-direction: column;
+}
+
+.headerContainer{
+    padding: 10px;
+}
+
+.columnContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.textStile{
+    font-size: small;
+    white-space: nowrap;
+}
+
+.itemContainer{
+    border-width: 1px;   
+    border-style: solid; 
+    border-top-color: #000;
+    border-left-color: #fff;
+    border-right-color: #000;
+    border-bottom-color: #fff;
+}
+
+
+.itemContainerRight{
+    border-width: 1px;   
+    border-style: solid; 
+    border-top-color: #000;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff; 
+}
+
+.subItemContainer{
+    padding: 5px;
+    border-width: 1px;   
+    border-style: solid; 
+    border-top-color: #000;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+}
+
+
+.subItemContainerRight{
+    border-width: 1px;   
+    border-style: solid; 
+    border-top-color: #000;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff; 
+}
+
+.containerButtons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pageContainer{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tableButton{
+    background-color: #36320A;
+    font-size: 12px;
+    color: #fff;
+    border-color: #fff;
+    border: 2;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: transform 0.5s;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tableButtonSearch:hover{
     transform: scale(1.2);
 }

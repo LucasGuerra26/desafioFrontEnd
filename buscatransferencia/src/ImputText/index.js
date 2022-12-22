@@ -5,7 +5,7 @@ function ImputText (props) {
             <h3 className='titleInput'>{props.title}</h3>
             <div className="containerImputText">    
                 
-                <input 
+                <input className='input'
                     type="text" 
                     placeholder={props.mensage}
                     value={props.value}

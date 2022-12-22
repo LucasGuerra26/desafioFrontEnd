@@ -4,7 +4,7 @@ export function checkError(idConta, dataFinal, dataInicial, nomeOperador) {
       return false;
     }
     if (dataFinal !== "" && dataInicial === "" || dataFinal === "" && dataInicial !== "" ) {
-      alert("PREENCHA OS CAMPOS DATA DE INICIO E DATA DE FIM PARA CONCLUIR A SOLICITAÇÂO");
+      alert("PARA O FILTRO COM DATA: PREENCHA OS CAMPOS *DATA DE INICIO* E *DATA DE FIM* PARA CONCLUIR A SOLICITAÇÂO COM ÊXITO");
       return false;
     }
     if (dataFinal !== "" && dataInicial !== "") {
