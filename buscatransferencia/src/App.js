@@ -55,6 +55,9 @@ function App() {
   }
 
   async function search(){
+    setIndices([0, 1, 2, 3])
+    setPaginaAtual(1)
+    
     if (!checkError(idConta, dataFinal, dataInicial, nomeOperador)){
       return
     } else {
