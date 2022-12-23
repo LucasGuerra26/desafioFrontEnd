@@ -227,21 +227,12 @@ function App() {
                 </button>
 
             </div>
-                
-
         </div>
-
             </div>
         </div>
       </div>
     </div>
   );
 }
-/* 
-var dataInput = '2020-02-06';
-
-data = new Date(dataInput);
-dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
-*/
 
 export default App;

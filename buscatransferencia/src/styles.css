@@ -187,3 +187,27 @@
 .tableButtonSearch:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 900px) {
+    .container{
+        height: auto;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .box{
+        flex-direction: column;
+        
+    }
+    .textStile{
+        font-size: 11px;
+    }
+    .form{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .table{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+}
